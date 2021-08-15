@@ -1,9 +1,11 @@
-{
+require('dotenv').config()
+
+module.exports = {
   "development": {
-    "username": "root",
-    "password": "password",
-    "database": "FullStackDB",
-    "host": "localhost",
+    "username": process.env.DB_username,
+    "password": process.env.DB_password,
+    "database": process.env.DB_database,
+    "host": process.env.DB_host,
     "dialect": "mysql"
   },
   "test": {
