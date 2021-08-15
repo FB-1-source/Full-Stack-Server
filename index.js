@@ -28,4 +28,7 @@ db.sequelize.sync().then(() => {
   console.log("Backend is working on port 3001")
  });
 })
+.catch((err) => {
+ console.log(err)
+});
 
