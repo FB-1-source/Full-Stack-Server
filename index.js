@@ -24,7 +24,7 @@ app.use("/likes", likesRouter)
 
 
 db.sequelize.sync().then(() => {
- app.listen(process.env.PORT || 3306, () => {
+ app.listen(process.env.PORT || 3001, () => {
   console.log("Backend is working")
  });
 })
